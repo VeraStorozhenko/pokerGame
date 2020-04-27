@@ -1,0 +1,24 @@
+== Description
+
+Ruby-Poker handles the logic for getting the rank of a poker hand. It can also be used to compare two or more hands to determine which hand has the highest poker value.
+
+Card representations can be passed to the PokerHand constructor as a string or an array. Face cards (cards ten, jack, queen, king, and ace) are created using their letter representation (T, J, Q, K, A).
+
+== Install
+
+    gem install ruby-poker
+
+== Example
+
+    require 'rubygems'
+    require 'ruby-poker'
+
+    hand1 = PokerHand.new("8H 9C TC JD QH")
+    hand2 = PokerHand.new(["3D", "3C", "3S", "KD", "AH"])
+    puts hand1                => 8h 9c Tc Jd Qh (Straight)
+    puts hand1.just_cards     => 8h 9c Tc Jd Qh
+    puts hand1.rank           => Straight
+    puts hand2                => 3d 3c 3s Kd Ah (Three of a kind)
+    puts hand2.rank           => Three of a kind
+    puts hand1 > hand2        => true
+    
