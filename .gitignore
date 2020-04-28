@@ -3,3 +3,4 @@
 /doc
 /ext
 /game/draft.rb
+/game/iteration.rb

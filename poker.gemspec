@@ -9,8 +9,6 @@ Gem::Specification.new do |spec|
   spec.email         = ["verun.mak@gmail.com"]
   spec.summary       = %q{poker}
   spec.description   = %q{texas poker - for comparing poker hands}
-  spec.homepage      = "http://domainforproject.com/"
-  spec.license       = "MIT"
   spec.files         = ["game/deck.rb", 
                         "game/main.rb", 
                         "poker.rb", 

@@ -3,7 +3,6 @@
 require 'rubygems'
 require 'ruby-poker'
 require_relative 'deck'
-require_relative 'iteration'
 
 deck = Deck.new
 # When the application starts, the player is given 2 random cards from the deck.
